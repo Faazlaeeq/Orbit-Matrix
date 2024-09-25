@@ -97,7 +97,7 @@ export default function Header() {
               padding: isNavClicked ? "20px" : 0,
             }}
             transition={{ duration: 0.5 }}
-            className="absolute left-0 top-14 w-full overflow-hidden bg-white p-5 shadow-lg lg:hidden"
+            className="absolute left-0 top-14 w-full overflow-hidden bg-black p-5 shadow-lg lg:hidden"
           >
             <div className="container mx-auto flex flex-col px-5 font-medium">
               <Link
