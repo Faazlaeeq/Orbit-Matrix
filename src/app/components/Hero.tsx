@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="mb-16 flex flex-col gap-4 md:flex-row xl:items-center">
           <CustomBtn txt="Book a call" className="w-[150px]" href="/contact" />
           <Link
-            href={resume}
+            href="/cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download="cv.pdf"
