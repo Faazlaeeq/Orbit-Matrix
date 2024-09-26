@@ -48,7 +48,7 @@ export default function ContactDetails() {
 
     {
       name: "Github",
-      path: "https://github.com/faazdotdev",
+      path: "https://github.com/faazlaeeq",
     },
   ];
 
