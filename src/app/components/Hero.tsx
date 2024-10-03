@@ -2,11 +2,10 @@
 
 import CustomBtn from "./Reusables/CustomBtn";
 import GradientTxt from "./Reusables/GradientTxt";
-import profImg from "../../../public/img2.jpg";
+import profImg from "../../../public/me with border circle.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import resume from "../../../public/cv.pdf";
 
 export default function Hero() {
   const MotionImage = motion(Image);

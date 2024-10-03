@@ -3,11 +3,25 @@ export const Technologies = {
   title: "Technologies",
   type: "document",
   fields: [
-    {
+     {
       name: "technology",
-      title: "Technology",
-      type: "array",
-      of: [{ type: "string" }],
+      title: "technology",
+      type: "string",
     },
+    {
+    name: "logo",
+    title: "logo",
+    type: "image",
+    options: { hotspot: true },
+    fields: [
+        {
+          name: "alt",
+          title: "Alt",
+          type: "string",
+        },
+      ],
+    },
+
+    
   ],
 };

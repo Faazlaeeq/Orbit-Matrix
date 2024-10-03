@@ -44,8 +44,8 @@ export const Projects = {
     },
 
     {
-      name: "techStack",
-      title: "TechStack",
+      name: "technologies",
+      title: "Technologies",
       type: "array",
       of: [{ type: "string" }],
     },
