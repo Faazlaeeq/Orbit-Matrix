@@ -44,10 +44,10 @@ export const Projects = {
     },
 
     {
-      name: "technologies",
-      title: "Technologies",
+      name: "techStack",
+      title: "Tech Stack",
       type: "array",
-      of: [{ type: "string" }],
+      of: [{ type: "reference", to: { type: "technologies" } }],
     },
 
     {

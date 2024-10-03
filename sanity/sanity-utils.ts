@@ -6,6 +6,7 @@ import type { Education, Work } from "../types/Experience";
 import type { FAQ } from "../types/FAQ";
 import type { Testimonials } from "../types/Testimonials";
 import { ArticleProps } from "../types/Articles";
+import { Technology } from "../types/Technology";
 
 export async function getProjects(): Promise<Project[]> {
   return createClient(clientConfig).fetch(
@@ -20,8 +21,11 @@ export async function getProjects(): Promise<Project[]> {
       playstoreUrl,
       appstoreUrl,
       githubUrl,
-      techStack,
-      "images": images[]{
+ "techStack": techStack[]->{
+    _id,
+    technology,
+    "logoUrl": logo.asset->url
+  },      "images": images[]{
         "url": asset->url,
         alt
       },
@@ -33,21 +37,25 @@ export async function getProjects(): Promise<Project[]> {
 export async function getProject(slug: string): Promise<Project> {
   return createClient(clientConfig).fetch(
         groq`*[_type == "project" && slug.current == $slug][0]{
-      _id,
-      _createdAt,
-      title,
-      tagline,
-      description,
-      liveUrl,
-      playstoreUrl,
-      appstoreUrl,
-      githubUrl,
-      techStack,
-      "images": images[]{
-        "url": asset->url,
-        alt
-      },
-      content
+       _id,
+  _createdAt,
+  title,
+  tagline,
+  description,
+  liveUrl,
+  playstoreUrl,
+  appstoreUrl,
+  githubUrl,
+  "techStack": techStack[]->{
+    _id,
+    technology,
+    "logoUrl": logo.asset->url
+  },
+  "images": images[]{
+    "url": asset->url,
+    alt
+  },
+  content
     }`,
     { slug },
   );}
@@ -170,9 +178,13 @@ export async function getTestimonials(): Promise<Testimonials[]> {
   );
 }
 
-export async function getTechStacks(): Promise<string[]> {
+export async function getTechStacks(): Promise<Technology[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == 'technologies'][].technology[]`,
+    groq`*[_type == 'technologies']{
+  _id,
+  technology,
+  "logoUrl": logo.asset->url
+}`,
   );
 }
 

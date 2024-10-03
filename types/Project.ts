@@ -11,8 +11,12 @@ export type Project = {
   playstoreUrl: string;
   appstoreUrl: string;
   githubUrl: string;
-  techStack: string[];
-  images: {
+   techStack: {
+    _id: string;
+    technology: string;
+    logoUrl: string;
+  }[];
+    images: {
     url: string;
     alt: string;
   }[];

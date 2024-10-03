@@ -148,6 +148,7 @@ export default async function ProjectDetails({ params }: Params) {
       <div className="container mx-auto px-5 pt-5 lg:px-20">
         <div className="mb-20 mt-10 flex flex-col justify-between gap-6 lg:flex-row lg:items-center">
           <div>
+
             <GradientTxt
               tagName="h6"
               txt={project.tagline}
@@ -159,6 +160,22 @@ export default async function ProjectDetails({ params }: Params) {
           </div>
 
           <div className="lg:max-w-[50%]">
+            <div className="flex flex-wrap gap-4 justify-end">
+              {project.techStack.map((tech, index) => {
+                const isLastElement = index === project.techStack.length - 1;
+                return (
+                  <React.Fragment key={tech._id}>
+                    <div className="flex items-center gap-2 text-sm">
+                      {tech.logoUrl && (
+                        <Image src={tech.logoUrl} alt={tech.technology} className="h-4 w-auto" width={32} height={32} />
+                      )}
+                      <span>{tech.technology}</span>
+                    </div>
+                    {!isLastElement && <span>•</span>}
+                  </React.Fragment>
+                );
+              })}
+            </div>
             <h4 className="mb-3 text-[19px] font-bold leading-[110%] md:text-2xl">
               Project Overview
             </h4>

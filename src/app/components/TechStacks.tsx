@@ -6,6 +6,7 @@ import { getTechStacks } from "../../../sanity/sanity-utils";
 import { toast } from "react-toastify";
 import GradientTxt from "./Reusables/GradientTxt";
 import FadeUp from "@/animations/FadeUp";
+import { Technology } from "../../../types/Technology";
 
 const marqueeVariants = {
   animate: {
@@ -21,8 +22,63 @@ const marqueeVariants = {
   },
 };
 
+// export default function TechStacks() {
+//   const [techStacks, setTechStacks] = useState<Technology[]>([]);
+
+//   useEffect(() => {
+//     const getStacks = async function () {
+//       try {
+//         const stacks = await getTechStacks();
+//         setTechStacks(stacks);
+//       } catch (error) {
+//         toast.error("Failed to fetch techstacks. Please try again later.");
+//       }
+//     };
+//     getStacks();
+//   }, []);
+
+//   return (
+//     <section className="mb-[108px]">
+//       <FadeUp tag="div" className="mb-16">
+//         <GradientTxt
+//           tagName="h6"
+//           txt="TECHNOLOGIES I USE"
+//           className="mb-4 text-center text-[22px] font-bold"
+//         />
+
+//       </FadeUp>
+//       <div className="relative mt-10 overflow-hidden">
+//         <div className=" absolute -left-2 z-10 h-full w-[20px] lg:w-[30px] xl:w-[40px]" />
+//         <div className=" absolute -right-2 z-10 h-full w-[20px] lg:w-[30px] xl:w-[40px]" />
+//         <motion.div
+//           className="flex justify-center gap-6 whitespace-nowrap"
+//           variants={marqueeVariants}
+//           animate="animate"
+//         >
+//           {techStacks.map((tech, index) => (
+//             <span
+//               key={index}
+//               className="dancingScript mx-4 text-xl font-bold tracking-[4px] text-gray-600 md:text-2xl"
+//             >
+//               {tech}
+//             </span>
+//           ))}
+//           {techStacks.map((tech, index) => (
+//             <span
+//               key={`duplicate-${index}`}
+//               className="dancingScript mx-4 text-xl font-bold tracking-[4px] text-gray-600 md:text-2xl"
+//             >
+//               {tech}
+//             </span>
+//           ))}
+//         </motion.div>
+//       </div>
+//     </section>
+//   );
+// }
+
 export default function TechStacks() {
-  const [techStacks, setTechStacks] = useState<string[]>([]);
+  const [techStacks, setTechStacks] = useState<Technology[]>([]);
 
   useEffect(() => {
     const getStacks = async function () {
@@ -30,7 +86,7 @@ export default function TechStacks() {
         const stacks = await getTechStacks();
         setTechStacks(stacks);
       } catch (error) {
-        toast.error("Failed to fetch techstacks. Please try again later.");
+        toast.error("Failed to fetch tech stacks. Please try again later.");
       }
     };
     getStacks();
@@ -44,30 +100,29 @@ export default function TechStacks() {
           txt="TECHNOLOGIES I USE"
           className="mb-4 text-center text-[22px] font-bold"
         />
-
       </FadeUp>
       <div className="relative mt-10 overflow-hidden">
-        <div className=" absolute -left-2 z-10 h-full w-[20px] lg:w-[30px] xl:w-[40px]" />
-        <div className=" absolute -right-2 z-10 h-full w-[20px] lg:w-[30px] xl:w-[40px]" />
+        <div className="absolute -left-2 z-10 h-full w-[20px] lg:w-[30px] xl:w-[40px]" />
+        <div className="absolute -right-2 z-10 h-full w-[20px] lg:w-[30px] xl:w-[40px]" />
         <motion.div
           className="flex justify-center gap-6 whitespace-nowrap"
           variants={marqueeVariants}
           animate="animate"
         >
-          {techStacks.map((tech, index) => (
+          {techStacks.map((tech) => (
             <span
-              key={index}
+              key={tech._id}
               className="dancingScript mx-4 text-xl font-bold tracking-[4px] text-gray-600 md:text-2xl"
             >
-              {tech}
+              {tech.technology}
             </span>
           ))}
-          {techStacks.map((tech, index) => (
+          {techStacks.map((tech) => (
             <span
-              key={`duplicate-${index}`}
+              key={`duplicate-${tech._id}`}
               className="dancingScript mx-4 text-xl font-bold tracking-[4px] text-gray-600 md:text-2xl"
             >
-              {tech}
+              {tech.technology}
             </span>
           ))}
         </motion.div>
