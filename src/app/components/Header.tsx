@@ -20,8 +20,8 @@ export default function Header() {
               className="text-[15px] font-medium italic sm:text-base md:text-[24px] lg:font-bold"
             >
               <GradientTxt tagName="span" txt="<" />
-              {"Faaz"}
-              <GradientTxt tagName="span" txt="DotDev />." />
+              {"Orbit"}
+              <GradientTxt tagName="span" txt="Matrix />." />
             </Link>
             <svg
               onClick={() => setIsNavClicked(!isNavClicked)}

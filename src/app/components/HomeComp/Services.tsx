@@ -33,8 +33,8 @@ export default function Services() {
           txt="SERVICES"
           className="mb-4 text-center text-[22px] font-bold"
         />
-        <h2 className="mx-auto mb-10 max-w-[800px] text-center text-[36px] font-bold leading-[120%] tracking-[0.5px] lg:text-[54px]">
-          Code that solves problems, one product at a time.
+        <h2 className="mx-auto mb-10 max-w-[800px] text-center text-[28px] font-bold leading-[120%] tracking-[0.5px] lg:text-[45px]">
+          Building Your Digital Ecosystem for Performance, Presence, and Profit.
         </h2>
       </FadeUp>
 

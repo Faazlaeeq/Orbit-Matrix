@@ -17,18 +17,18 @@ export default function Hero() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="mb-4 text-[40px] font-bold leading-[110%] md:text-[68px] lg:text-[70px]">
-          <GradientTxt tagName="span" txt="I develop fullstack" /> solutions
-          that delight and inspire users.
+        <h1 className="mb-4 text-[10px] font-bold leading-[110%] md:text-[8px] lg:text-[52px]">
+          <GradientTxt tagName="span" txt="Stop Juggling Vendors." />
+          <br></br>Get Everything You Need for Digital Growth in One Place.
         </h1>
 
         <p className="mb-16 text-[19px] text-[#666] lg:text-[22px]">
-          Hi! I'm Faaz, a Mobile App Developer based in Karachi. I develop high-performance applications with an emphasis on functionality and efficiency.
+          We are the Integrated Solutions Hub that designs, develops, and automates your brand's performance—from stunning websites and apps to intelligent Power BI dashboards and complete GoHighLevel funnels.
         </p>
 
         <div className="mb-16 flex flex-col gap-4 md:flex-row xl:items-center">
           <CustomBtn txt="Book a call" className="w-[150px]" href="/contact" />
-          <Link
+          {/* <Link
             href="/cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export default function Hero() {
                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
               />
             </svg>
-          </Link>
+          </Link> */}
         </div>
       </motion.div>
 
@@ -59,7 +59,7 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
         src={profImg}
         alt="profile image"
-        className="mx-auto w-full rounded-full lg:w-[500px]"
+        className="mx-auto w-full  lg:w-[500px]"
         priority
       />
     </section>

@@ -15,7 +15,7 @@ export default function FAQ() {
     const fetchData = async function () {
       try {
         const faqs = await getFAQ();
-        setFaqs(faqs);
+        setFaqs(faqs.reverse());
       } catch (error) {
         toast.error("Failed to fetch FAQs. Please try again later.");
       }

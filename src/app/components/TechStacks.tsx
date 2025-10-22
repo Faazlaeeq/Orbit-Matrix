@@ -42,7 +42,7 @@ const marqueeVariants = {
 //       <FadeUp tag="div" className="mb-16">
 //         <GradientTxt
 //           tagName="h6"
-//           txt="TECHNOLOGIES I USE"
+//           txt="TECHNOLOGIES WE USE"
 //           className="mb-4 text-center text-[22px] font-bold"
 //         />
 
@@ -97,7 +97,7 @@ export default function TechStacks() {
       <FadeUp tag="div" className="mb-16">
         <GradientTxt
           tagName="h6"
-          txt="TECHNOLOGIES I USE"
+          txt="TECHNOLOGIES WE USE"
           className="mb-4 text-center text-[22px] font-bold"
         />
       </FadeUp>
@@ -116,7 +116,7 @@ export default function TechStacks() {
             >
               {tech.technology}
             </span>
-          ))}
+          )).reverse()}
           {techStacks.map((tech) => (
             <span
               key={`duplicate-${tech._id}`}
@@ -124,7 +124,7 @@ export default function TechStacks() {
             >
               {tech.technology}
             </span>
-          ))}
+          )).reverse()}
         </motion.div>
       </div>
     </section>

@@ -38,17 +38,17 @@ export default function ContactDetails() {
 
     {
       name: "Linkedin",
-      path: "https://www.linkedin.com/in/faazlaeeq",
+      path: "https://www.linkedin.com/in/orbitmatrix-00",
     },
 
     {
       name: "Twitter",
-      path: "https://x.com/faazlaeeq",
+      path: "https://x.com/orbitmatrix",
     },
 
     {
       name: "Github",
-      path: "https://github.com/faazlaeeq",
+      path: "https://github.com/orbitmatrix",
     },
   ];
 
@@ -70,10 +70,10 @@ export default function ContactDetails() {
         <div>
           <h2 className="font-medium italic text-white sm:text-base md:text-[24px] lg:font-bold">
             <GradientTxt tagName="span" txt="<" />
-            {"Faaz"}
-            <GradientTxt tagName="span" txt="DotDev />." />
+            {"Orbit"}
+            <GradientTxt tagName="span" txt="Matrix />." />
           </h2>
-          <p className="py-2 text-[#8a95ad]">Karachi, Pakistan</p>
+          <p className="py-2 text-[#8a95ad]">Louisiana, USA</p>
           <div className="flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -86,11 +86,11 @@ export default function ContactDetails() {
               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
             </svg>
             <Link
-              href="mailto:faazlaeeq@gmail.com"
+              href="mailto:ortbitmatrix.work@gmail.com"
               target="_blank"
               className="text-[17px] font-bold text-[#8a95ad]"
             >
-              faazlaeeq@gmail.com
+              orbitmatrix.work@gmail.com
             </Link>
           </div>
         </div>
@@ -111,9 +111,8 @@ export default function ContactDetails() {
 
       <p className="pb-10 pt-[100px] text-center text-[#8a95ad]">
         Copyright &copy; {date}{" "}
-        <GradientTxt tagName="span" txt="<FaazDotDev/>." /> all rights reserved.
-        Built using NextJS, Typescript, TailwindCSS, Framer motion, Sanity and
-        NodeJS.
+        <GradientTxt tagName="span" txt="<OrbitMatrix/>." /> all rights reserved.
+        Built with 💖 using NextJS.
       </p>
     </section>
   );

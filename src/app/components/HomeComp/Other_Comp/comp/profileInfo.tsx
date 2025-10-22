@@ -19,17 +19,17 @@ export default function ProfileInfo() {
       >
         <div>
           <GradientTxt
-            txt="FULLSTACK DEVELOPER"
+            txt="Solution Provider"
             className="text-[22px] font-bold tracking-[4px]"
             tagName="h5"
           />
           <h2 className="mb-4 mt-2 text-[40px] font-bold leading-[120%] tracking-[0.5px] md:text-[54px]">
-            That's me!
+            That's Us!
           </h2>
         </div>
         <p className="text-[19px] leading-[40px] text-[#666] md:text-[22px] lg:max-w-[50%]">
-          Over the past 4 years, I've collaborated with a diverse range of
-          clients, from startups to established businesses. I bring a passion
+          Over the past 4 years, We've collaborated with a diverse range of
+          clients, from startups to established businesses. We bring a passion
           for creating seamless digital experiences and solving complex problems
           through code.
         </p>
