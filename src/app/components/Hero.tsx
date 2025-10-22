@@ -17,12 +17,12 @@ export default function Hero() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="mb-4 text-[10px] font-bold leading-[110%] md:text-[8px] lg:text-[52px]">
+        <h1 className="mb-4 text-[25px] font-bold leading-[110%] md:text-[8px] lg:text-[52px]">
           <GradientTxt tagName="span" txt="Stop Juggling Vendors." />
           <br></br>Get Everything You Need for Digital Growth in One Place.
         </h1>
 
-        <p className="mb-16 text-[19px] text-[#666] lg:text-[22px]">
+        <p className="mb-16 text-[30px] text-[#666] lg:text-[22px]">
           We are the Integrated Solutions Hub that designs, develops, and automates your brand's performance—from stunning websites and apps to intelligent Power BI dashboards and complete GoHighLevel funnels.
         </p>
 

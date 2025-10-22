@@ -38,7 +38,7 @@ export default function ContactDetails() {
 
     {
       name: "Linkedin",
-      path: "https://www.linkedin.com/in/orbitmatrix-00",
+      path: "https://www.linkedin.com/company/orbitmatrix-00/?viewAsMember=true",
     },
 
     {
