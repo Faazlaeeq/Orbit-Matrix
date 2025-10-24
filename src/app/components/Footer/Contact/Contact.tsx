@@ -37,18 +37,18 @@ export default function ContactDetails() {
     },
 
     {
-      name: "Linkedin",
-      path: "https://www.linkedin.com/company/orbitmatrix-00/?viewAsMember=true",
+      name: "Facebook",
+      path: "https://www.facebook.com/orbitmatrix",
+    },
+
+    {
+      name: "Instagram",
+      path: "https://www.instagram.com/orbitmatrix/",
     },
 
     {
       name: "Twitter",
-      path: "https://x.com/orbitmatrix",
-    },
-
-    {
-      name: "Github",
-      path: "https://github.com/orbitmatrix",
+      path: "https://x.com/Orbitmatrx",
     },
   ];
 
@@ -112,7 +112,7 @@ export default function ContactDetails() {
       <p className="pb-10 pt-[100px] text-center text-[#8a95ad]">
         Copyright &copy; {date}{" "}
         <GradientTxt tagName="span" txt="<OrbitMatrix/>." /> all rights reserved.
-        Built with 💖 using NextJS.
+
       </p>
     </section>
   );

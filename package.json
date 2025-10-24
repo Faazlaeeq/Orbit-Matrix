@@ -15,6 +15,9 @@
     "@portabletext/react": "^3.1.0",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.44.0",
+    "embla-carousel": "8.3.0",
+    "embla-carousel-autoplay": "8.3.0",
+    "embla-carousel-react": "8.3.0",
     "framer-motion": "^11.2.9",
     "next": "^14.2.8",
     "next-sanity": "^9.3.8",
@@ -23,12 +26,10 @@
     "react-loading-skeleton": "^3.4.0",
     "react-slick": "^0.30.2",
     "react-toastify": "^10.0.5",
+    "resend": "^6.2.2",
     "sanity": "^3.44.0",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.1.14",
-		"embla-carousel-react": "8.3.0",
-		"embla-carousel": "8.3.0",
-		"embla-carousel-autoplay": "8.3.0"
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
