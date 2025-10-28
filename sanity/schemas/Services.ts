@@ -1,38 +1,40 @@
-export const Services = {
-  name: "service",
-  title: "Services",
-  type: "document",
+import { defineField, defineType } from 'sanity';
+
+export const Services = defineType({
+  name: 'service',
+  title: 'Services',
+  type: 'document',
   fields: [
-    {
-      name: "title",
-      title: "Title",
-      type: "string",
-    },
-
-    {
-      name: "description",
-      title: "Description",
-      type: "string",
-    },
-
-    {
-      name: "icon",
-      title: "Icon",
-      type: "image",
+    defineField({
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'icon',
+      title: 'Icon',
+      type: 'image',
       fields: [
-        {
-          name: "alt",
-          title: "Alt",
-          type: "string",
-        },
+        defineField({
+          name: 'alt',
+          title: 'Alt',
+          type: 'string',
+          validation: (rule) => rule.required(),
+        }),
       ],
-    },
-
-    {
-      name: "lists",
-      title: "Lists",
-      type: "array",
-      of: [{ type: "string" }],
-    },
+    }),
+    defineField({
+      name: 'lists',
+      title: 'Lists',
+      type: 'array',
+      of: [{ type: 'string' }],
+    }),
   ],
-};
+});

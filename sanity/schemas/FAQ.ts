@@ -1,18 +1,21 @@
-export const FAQ = {
-  name: "faq",
-  title: "FAQ",
-  type: "document",
-  fields: [
-    {
-      name: "question",
-      title: "Question",
-      type: "string",
-    },
+import { defineField, defineType } from 'sanity';
 
-    {
-      name: "answer",
-      title: "Answer",
-      type: "string",
-    },
+export const FAQ = defineType({
+  name: 'faq',
+  title: 'FAQ',
+  type: 'document',
+  fields: [
+    defineField({
+      name: 'question',
+      title: 'Question',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'answer',
+      title: 'Answer',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
   ],
-};
+});
