@@ -1,5 +1,5 @@
 export const seoKeywords = [
-  "Abdullah Ayoola",
+  "Faaz Laeeq",
   "Web Developer",
   "Web Designer",
   "Portfolio",
@@ -16,6 +16,6 @@ export const seoKeywords = [
   "MERN stack developer",
   "Software developer",
   "Software engineer",
-  "Web developer in Nigeria",
-  "Web developer in Lagos",
+  "Web developer in Pakistan",
+  "Web developer in US",
 ];

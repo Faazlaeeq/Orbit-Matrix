@@ -15,6 +15,10 @@ import AnimatedSlide from "./components/HomeComp/Projects/Swiper";
 import Articles from "./components/HomeComp/Articles";
 import TechStacks from "./components/TechStacks";
 
+import Stats from "./components/HomeComp/Stats";
+import Expertise from "./components/HomeComp/Expertise";
+import Pricing from "./components/HomeComp/Pricing";
+
 const Preloader = function () {
   return (
     <section className="fixed left-0 top-0 inline-flex h-full w-full items-center justify-center ">
@@ -77,15 +81,21 @@ export default function ClientHome() {
           <main key="main">
             <div className="container mx-auto px-5 pt-5 lg:px-20">
               <Hero />
+              <Stats />
             </div>
             <TechStacks />
+            <Expertise />
             <div className="container mx-auto px-5 pt-5 lg:px-20">
               <Services />
+
               <Projects />
+
             </div>
             <div className="relative h-[400px]">
               <AnimatedSlide />
             </div>
+            <div className="h-[300px]"></div>
+            <Pricing />
             <Articles />
             <OtherComponents />
           </main>
