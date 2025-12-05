@@ -72,7 +72,7 @@ export default function NewsletterPopup() {
                         Join our Newsletter
                     </h3>
                     <p className="mb-4 text-sm text-gray-300">
-                        We provide 3-months free access to our new product to our every newsletter joinee.
+                        Get <b>3 months</b> of free access to our new products just by joining our newsletter!
                     </p>
 
                     <form onSubmit={handleSubmit} className="flex flex-col gap-3">

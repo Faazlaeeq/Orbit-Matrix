@@ -50,7 +50,7 @@ export default function Newsletter() {
                     </h2>
                     <p className="mb-10 max-w-2xl text-lg text-gray-400">
                         Stay updated with our latest news, products, and special offers.
-                        We provide 3-months free access to our new product to our every newsletter joinee.
+                        Get <b>3 months</b> of free access to our new products just by joining our newsletter!
                     </p>
 
                     <form onSubmit={handleSubmit} className="flex w-full max-w-md flex-col gap-4 sm:flex-row">
