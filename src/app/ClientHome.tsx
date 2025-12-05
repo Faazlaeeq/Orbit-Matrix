@@ -18,6 +18,8 @@ import TechStacks from "./components/TechStacks";
 import Stats from "./components/HomeComp/Stats";
 import Expertise from "./components/HomeComp/Expertise";
 import Pricing from "./components/HomeComp/Pricing";
+import Newsletter from "./components/Newsletter";
+import NewsletterPopup from "./components/NewsletterPopup";
 
 const Preloader = function () {
   return (
@@ -96,10 +98,13 @@ export default function ClientHome() {
             </div>
             <div className="h-[300px]"></div>
             <Pricing />
+            <Newsletter />
             <Articles />
             <OtherComponents />
+
           </main>
           <Footer key="footer" />
+          <NewsletterPopup />
         </>
       )}
     </AnimatePresence>

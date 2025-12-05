@@ -6,6 +6,7 @@ import { Services } from "./Services";
 import { Technologies } from "./Technologies";
 import { Testimonials } from "./Testimonials";
 import { postType } from "./Post";
+import newsletter from "./Newsletter";
 
 const schemas = [
   Technologies,
@@ -15,7 +16,8 @@ const schemas = [
   Testimonials,
   Projects,
   Articles,
-  postType
+  postType,
+  newsletter,
 ];
 
 export default schemas;

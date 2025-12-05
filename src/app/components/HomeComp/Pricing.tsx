@@ -241,7 +241,7 @@ export default function Pricing() {
                             key={category}
                             onClick={() => setActiveTab(category)}
                             className={`rounded-full px-6 py-2 text-sm font-bold transition-all ${activeTab === category
-                                ? "bg-purple-600 text-white shadow-lg shadow-purple-500/30"
+                                ? "bg-gradient-to-r from-[#6c7fea]  to-[#6c3fea] text-white shadow-lg shadow-blue-500/30"
                                 : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"
                                 }`}
                         >
@@ -261,17 +261,17 @@ export default function Pricing() {
                                 exit={{ opacity: 0, y: -20 }}
                                 transition={{ duration: 0.3, delay: index * 0.1 }}
                                 className={`relative flex flex-col rounded-2xl border p-8 backdrop-blur-sm transition-all hover:-translate-y-2 ${plan.highlight
-                                    ? "border-purple-500 bg-purple-500/10 shadow-lg shadow-purple-500/20"
-                                    : "border-white/10 bg-white/5 hover:border-purple-500/50"
+                                    ? "border-[#6c7fea] bg-[#6c7fea]/10 shadow-lg shadow-[#6c7fea]/20"
+                                    : "border-white/10 bg-white/5 hover:border-[#6c7fea]/50"
                                     }`}
                             >
                                 {plan.highlight && (
-                                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-purple-600 px-4 py-1 text-xs font-bold text-white">
+                                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-[#6c7fea] px-4 py-1 text-xs font-bold text-white">
                                         MOST POPULAR
                                     </div>
                                 )}
                                 <h3 className="mb-2 text-2xl font-bold text-white text-left">{plan.name}</h3>
-                                <div className="mb-4 text-3xl font-bold text-purple-400 text-left">
+                                <div className="mb-4 text-3xl font-bold bg-gradient-to-r from-[#5cd9fc] to-[#6c7fea] bg-clip-text text-transparent text-left">
                                     {plan.price}
                                 </div>
                                 <p className="mb-8 text-sm text-gray-400 text-left">{plan.description}</p>
@@ -279,7 +279,7 @@ export default function Pricing() {
                                     {plan.features.map((feature: string, i: number) => (
                                         <li key={i} className="flex items-center gap-3 text-sm text-gray-300">
                                             <svg
-                                                className="h-5 w-5 flex-shrink-0 text-purple-500"
+                                                className="h-5 w-5 flex-shrink-0 text-[#6c7fea]"
                                                 fill="none"
                                                 viewBox="0 0 24 24"
                                                 stroke="currentColor"
@@ -297,7 +297,7 @@ export default function Pricing() {
                                 </ul>
                                 <CustomBtn
                                     txt="Get Started"
-                                    className={`w-full ${plan.highlight ? "bg-purple-600 hover:bg-purple-700" : ""
+                                    className={`w-full ${plan.highlight ? "bg-[#6c7fea] hover:bg-[#6c7fea]/80" : ""
                                         }`}
                                     href="/contact"
                                 />

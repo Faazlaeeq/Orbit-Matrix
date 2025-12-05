@@ -10,12 +10,12 @@ const stats = [
         text: "Success Rate",
     },
     {
-        num: 50,
+        num: 21,
         suffix: "+",
         text: "Happy Clients",
     },
     {
-        num: 100,
+        num: 63,
         suffix: "+",
         text: "Projects Delivered",
     },
@@ -36,7 +36,7 @@ export default function Stats() {
                 {stats.map((item, index) => (
                     <div key={index} className="flex flex-col items-center justify-center text-center">
                         <h3 className="mb-2 text-4xl font-bold md:text-5xl">
-                            <span className="bg-gradient-to-r from-[#6c7fea] to-[#4bff90] bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-[#6c7fea] to-[#6ccfff] bg-clip-text text-transparent">
                                 <CountUp end={item.num} duration={2.5} enableScrollSpy />
                                 {item.suffix}
                             </span>

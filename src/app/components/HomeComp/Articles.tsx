@@ -53,7 +53,7 @@ export default function Articles() {
 
   return (
     <section className="mb-[80px] bg-black">
-      <div className="container mx-auto flex flex-col items-start justify-between gap-10 px-5 pb-[100px] pt-[300px] md:flex-row md:gap-2 lg:px-20">
+      <div className="container mx-auto flex flex-col items-start justify-between gap-10 px-5 pb-[100px] pt-[100px] md:flex-row md:gap-2 lg:px-20">
         <div
           id="left-content"
           className={`md:sticky ${isBottom ? "md:bottom-0" : "md:top-20"}`}
