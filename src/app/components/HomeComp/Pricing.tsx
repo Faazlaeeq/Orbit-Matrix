@@ -18,7 +18,7 @@ const pricingData: Record<string, any[]> = {
     "Web Development": [
         {
             name: "Starter",
-            price: "$999",
+            price: "$200",
             description: "Ideal for small businesses and startups.",
             features: [
                 "Custom Design (5 Pages)",
@@ -31,7 +31,7 @@ const pricingData: Record<string, any[]> = {
         },
         {
             name: "Professional",
-            price: "$1,899",
+            price: "$999",
             description: "For growing businesses needing more features.",
             features: [
                 "Custom Design (10 Pages)",
@@ -61,20 +61,19 @@ const pricingData: Record<string, any[]> = {
     "Mobile App": [
         {
             name: "MVP",
-            price: "$4,999",
+            price: "$799",
             description: "Get your app idea to market quickly.",
             features: [
                 "iOS or Android",
                 "Basic Features",
                 "Standard UI Design",
-                "App Store Submission",
                 "2 Months Support",
             ],
             highlight: false,
         },
         {
             name: "Growth",
-            price: "$9,999",
+            price: "$1499",
             description: "Full-featured app for scaling businesses.",
             features: [
                 "iOS & Android (Cross-platform)",
@@ -104,7 +103,7 @@ const pricingData: Record<string, any[]> = {
     "UI/UX Design": [
         {
             name: "Basic",
-            price: "$1,499",
+            price: "$199",
             description: "Essential design for small projects.",
             features: [
                 "User Research",
@@ -117,7 +116,7 @@ const pricingData: Record<string, any[]> = {
         },
         {
             name: "Advanced",
-            price: "$2,999",
+            price: "$799",
             description: "Comprehensive design for complex products.",
             features: [
                 "In-depth Research",
@@ -131,9 +130,10 @@ const pricingData: Record<string, any[]> = {
         },
     ],
     "Ecommerce": [
+
         {
             name: "Shopify",
-            price: "$2,499",
+            price: "$399",
             description: "Quick and reliable online store.",
             features: [
                 "Theme Customization",
@@ -145,8 +145,23 @@ const pricingData: Record<string, any[]> = {
             highlight: false,
         },
         {
+            name: "Premium Store",
+            price: "$899",
+            description: "A polished, scalable store with advanced features.",
+            features: [
+                "Premium Theme Setup",
+                "Product Upload (up to 150)",
+                "Custom Sections & Layouts",
+                "Advanced Payment & Shipping Setup",
+                "Conversion-Optimized Design",
+                "Essential Marketing Integrations",
+            ],
+            highlight: false,
+        },
+
+        {
             name: "Custom Store",
-            price: "$5,999",
+            price: "$1999",
             description: "Tailored e-commerce experience.",
             features: [
                 "Custom Design",
@@ -173,6 +188,20 @@ const pricingData: Record<string, any[]> = {
             ],
             highlight: false,
         },
+        {
+            name: "Visibility Boost",
+            price: "$749/mo",
+            description: "Stronger reach with multi-channel support.",
+            features: [
+                "Enhanced SEO",
+                "Basic Social Media Management",
+                "Content Calendar",
+                "Landing Page Optimization",
+                "Bi-weekly Reporting",
+            ],
+            highlight: false,
+        },
+
         {
             name: "Growth Pack",
             price: "$999/mo",
