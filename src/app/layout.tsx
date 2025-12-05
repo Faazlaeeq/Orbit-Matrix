@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Analytics } from "@vercel/analytics/next";
 import { seoKeywords } from "./seoKeywords";
 
 export const metadata: Metadata = {
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         {children}
         <ToastContainer />
+        <Analytics />
       </body>
     </html>
   );
